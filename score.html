@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preah Sisowath New Generation School</title>
+</head>
+
+<body>
+    <h1>NGS Score</h1>
+    <label for="khmer">Khmer:</label><br><br>
+    <input type="number" id="math" placeholder="Khmer"><br><br>
+    <label for="physic">Physic:</label><br><br>
+    <input type="number" id="khmer" placeholder="Physic"><br><br>
+    <label for="math">Math:</label><br><br>
+    <input type="number" id="physics" placeholder="Math"><br><br>
+    <label for="mc">Moral-Civic:</label><br><br>
+    <input type="number" id="MC" placeholder="Moral-Civic"><br><br>
+    <label for="chem">Chemistry:</label><br><br>
+    <input type="number" id="chemistry" placeholder="Chemistry"><br><br>
+    <label for="sport">Sport:</label><br><br>
+    <input type="number" id="sport" placeholder="Sport"><br><br>
+    <label for="earth">Earth:</label><br><br>
+    <input type="number" id="earth" placeholder="Earth"><br><br>
+    <label for="economic">Economics:</label><br><br>
+    <input type="number" id="eco" placeholder="Economics"><br><br>
+    <label for="geo">Geography:</label><br><br>
+    <input type="number" id="geo" placeholder="Geography"><br><br>
+    <label for="his">History:</label><br><br>
+    <input type="number" id="his" placeholder="History"><br><br>
+    <label for="bio">Biology:</label><br><br>
+    <input type="number" id="bio" placeholder="Biology"><br><br>
+    <label for="eng">English:</label><br><br>
+    <input type="number" id="eng" placeholder="English"><br><br>
+    <label for="ICT">ICT</label><br><br>
+    <input type="number" id="ICT" placeholder="ICT"><br><br>
+    <button onclick="onSubmit()">Click me</button>
+    <p id="result"></p>
+    
+    <script>
+        function onSubmit() {
+            var khmer = document.getElementById("khmer").value;
+            var math = document.getElementById("math").value;
+            var physics = document.getElementById("physics").value;
+            var MC = document.getElementById("MC").value;
+            var chem = document.getElementById("chemistry").value;
+            var sport = document.getElementById("sport").value;
+            var earth = document.getElementById("earth").value;
+            var eco = document.getElementById("eco").value;
+            var geo = document.getElementById("geo").value;
+            var his = document.getElementById("his").value;
+            var bio = document.getElementById("bio").value;
+            var eng = document.getElementById("eng").value;
+            var ict = document.getElementById("ICT").value;
+            console.log(typeof (khmer));
+            console.log(typeof (math));
+            console.log(typeof (physics));
+            console.log(typeof (chem));
+            console.log(typeof (MC));
+            console.log(typeof (sports));
+            console.log(typeof (geo));
+            console.log(typeof (bio));
+            console.log(typeof (eng));
+            console.log(typeof (ict));
+            console.log(typeof (his));
+            console.log(typeof (earthh));
+            console.log(typeof (eco));
+            var total = (Number(khmer) + Number(math) + Number(physics)   + Number( MC)  + Number(chem)  + Number(sport )  + Number(earth )  + Number(eco )  + Number(geo)  + Number(bio ) + Number(his) + Number(eng)  + Number(ict)   );
+            document.getElementById("result").innerHTML = "Your Score :" + total;
+            if (total >= 731.7) {
+                alert("You got grade A!")
+            }
+            else if(total >=650.4){
+                alert("You got grade B!")
+            }
+            else if(total>=569.1){
+                alert("You got grade C!")
+            }
+            else if(total>=487.8){
+                alert("You got grade D!")
+            }
+            else if(total>=406.5){
+                alert("You got grade E")
+            }
+            else{
+                alert("You are failed")
+            }
+        }
+    </script>
+</body>
+
+</html>
